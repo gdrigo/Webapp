@@ -1,0 +1,181 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+/*TopBar*/
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  opacity: 0.95;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  /*padding-right: 5%;*/
+  height: 65px;
+  border-bottom: 1px solid #d8d6d6;
+}
+
+.navbar img{
+  height: 30px;
+  margin-top: -12%; 
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding-top: 65px;
+}
+
+#wrapper.toggled {
+    padding-left: 100px;
+}
+
+#sidebar-wrapper {
+  font-family: 'Source Sans Pro', sans-serif;
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  min-height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #040243;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#main-content-wrapper {
+    /*width: 100%;*/
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #main-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+}
+
+#topSidebarButtons {
+  top: 0;
+  left: 0;
+}
+
+#bottomSidebarButtons {
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    padding-top: 10px;
+}
+
+.sidebar-nav img {
+  height: 21px;
+  padding-right: 15px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 53px;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 53px;
+    }
+
+    #main-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #main-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+
+#customer-list-wrapper {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  min-height: 100%;
+  
+  overflow-y: auto;
+  background-color: #F0F0F7;
+}
+
+#search-bar-holder input{
+  right: 0;
+}

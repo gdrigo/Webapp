@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TurnTable</title>
+  
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- CSS File-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+ 
+
+  <!--Top Bar-->
+  <nav class="navbar navbar-fixed-top" id="topbar" >
+    <h2><a href="home.html" class="navbar-brand" id="logo" ><img src="logo.png"  height="100%" alt="Logo"></a></h2>
+  </nav>
+  <!-- Top Bar Ends -->
+
+  <!-- Main Wrapper-->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="row no-gutters col-lg-2 col-md-2" id="sidebar-wrapper">
+      <ul class="sidebar-nav" id="topSidebarButtons">
+        <li><a href="#home"><img src="icon_home.png" alt="Home Icon">Home</a></li>
+        <li><a href="#tablemanagement"><img src="icon_products.png" alt="Table Management Icon">Table Management</a></li>
+        <li><a href="#customers"><img src="icon_customers.png" alt="Customers Icon">Customers</a></li>
+        <li><a href="#restaurantperformance"><img src="icon_dashboard.png" alt="Restaurant Performance Icon">Performance</a></li>
+        <li><a href="#calendar"><img src="icon_calendar.png" alt="Calendar Icon">Calendar</a></li>
+      </ul>
+      <ul class="sidebar-nav" id="bottomSidebarButtons">
+        <li><a href="#helpcenter"><img src="icon_helpcenter.png" alt="Help Center Icon">Help Center</a></li>
+        <li><a href="#settings"><img src="icon_settings.png" alt="Settings Icon">Settings</a></li>    
+      </ul>
+    </div>
+    <!-- Sidebar ends -->
+
+    <!-- Main Content -->
+    <main class="col-lg-12 col-md-12 container-fluid" id="main-content-wrapper">
+      <a href="#sidebar-toggle" class="btn btn-default" id="sidebar-toggle">Toggle</a>
+      <p>MAIN CONTENTBacon ipsum dolor amet andouille pastrami venison corned beef capicola. Short loin kielbasa frankfurter, sirloin alcatra burgdoggen pork spare ribs meatloaf bresaola. Brisket shankle venison landjaeger, burgdoggen frankfurter short loin capicola turducken tongue tail hamburger pig ball tip. Leberkas tail corned beef chicken shankle ball tip alcatra fatback porchetta venison shoulder short ribs boudin bacon capicola. Kielbasa frankfurter pork belly, turducken brisket tail strip steak beef tri-tip jowl pork. Tri-tip hamburger burgdoggen shank short loin meatball pastrami bacon shankle.</p>                 
+    </main>
+    <!-- Main Content ends -->
+
+  </div>
+  <!-- Main Wrapper ends -->
+
+
+  <!-- Sidebar Toggle JS -->
+  <script>
+    $("#sidebar-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+
+  </body>
+</html>
